@@ -21,11 +21,9 @@ enum class PinValue
     HIGH
 };
 
-class IGPIO
+class IGpio
 {
 public:
-    IGPIO();
-    ~IGPIO();
     virtual void init(const std::string &name, 
         const std::string &pin, 
         Direction dir) = 0;

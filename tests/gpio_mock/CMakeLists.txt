@@ -1,7 +1,7 @@
 include_directories(${PROJECT_SOURCE_DIR}/../Interfaces)
-include_directories(${PROJECT_SOURCE_DIR}/../mocks)
+include_directories(${PROJECT_SOURCE_DIR}/../mocks/gpio)
 
-link_directories(${PROJECT_SOURCE_DIR}/../mocks)
+link_directories(${PROJECT_SOURCE_DIR}/../mocks/gpio)
 
 add_executable(MainProject main.cpp)
 

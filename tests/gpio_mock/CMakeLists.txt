@@ -3,6 +3,9 @@ include_directories(${PROJECT_SOURCE_DIR}/../mocks/gpio)
 
 link_directories(${PROJECT_SOURCE_DIR}/../mocks/gpio)
 
-add_executable(MainProject main.cpp)
+add_executable(gpio_tests main.cpp)
 
-target_link_libraries(MainProject Mocks)
+target_link_libraries(gpio_tests gpio_mock)
+
+target_compile_options(gpio_tests PRIVATE -Wall -Wextra)
+target_compile_options(gpio_mock PRIVATE -Wall -Wextra)

@@ -1,6 +1,5 @@
 #include "gpio_mock.h"
 
-
 int main(int argc, char *argv[])
 {
     api::hal::gpio::GpioMock gpio;

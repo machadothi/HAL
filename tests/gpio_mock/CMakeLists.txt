@@ -7,5 +7,4 @@ add_executable(gpio_tests main.cpp)
 
 target_link_libraries(gpio_tests gpio_mock)
 
-target_compile_options(gpio_tests PRIVATE -Wall -Wextra)
-target_compile_options(gpio_mock PRIVATE -Wall -Wextra)
+target_compile_options(gpio_tests PUBLIC -Wall -Wextra)
